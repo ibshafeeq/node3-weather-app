@@ -30,6 +30,7 @@ app.get('/about', (req , res) => {
         desc: 'This page is coming from hbs'
     })
 })
+
 app.get('/help', (req , res) => {
     res.render('help' , {
         title: 'help ' , 
