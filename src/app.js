@@ -8,6 +8,7 @@ const forcast = require('./utils/forecast')
 
 //starting express
 const app = express()
+const port = process.env.PORT || 3000
 
 //setting views and hbs
 app.set('view engine', 'hbs')
@@ -88,6 +89,6 @@ app.get('*', (req, res) => {
 
 
 //start server
-app.listen(3000, ()=> {
-    console.log('Server started at port 3000')
+app.listen(port, ()=> {
+    console.log('Server started at port '+ port)
 })
